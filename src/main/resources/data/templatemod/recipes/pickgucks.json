@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 6,
+  "experience": 999999999999999999999999999999999999999.15,
+  "ingredient": {
+    "tag": "minecraft:dirt"
+  },
+  "result": "templatemod:palefox_pickaxe"
+}

@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -14,9 +15,13 @@ public class ModItems {
     public static final Item PALEFOX = registerItem("palefox", new Item(new FabricItemSettings()));
     public static final Item STRESSBALL = registerItem("stressball", new Item(new FabricItemSettings()));
 
+    public static final Item PALEFOX_PICKAXE = registerItem("palefox_pickaxe",
+            new PickaxeItem(ModToolMaterial.PALEFOX, 69, 69.69F, new FabricItemSettings()));
+
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
         entries.add(PALEFOX);
         entries.add(STRESSBALL);
+        entries.add(PALEFOX_PICKAXE);
     }
 
     private static Item registerItem(String name, Item item) {
