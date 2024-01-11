@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "templatemod",
+	"version": "${version}",
+	"name": "Gay Balls",
+	"description": "Aurghhhh!",
+	"authors": [
+		"Guh!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/templatemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gay.balls.templatemod.TemplateMod"
+		],
+		"client": [
+			"gay.balls.templatemod.TemplateModClient"
+		],
+		"fabric-datagen": [
+			"gay.balls.templatemod.TemplateModDataGenerator"
+		]
+	},
+	"mixins": [
+		"templatemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
